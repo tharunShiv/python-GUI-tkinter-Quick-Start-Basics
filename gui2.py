@@ -2,7 +2,7 @@ import tkinter as tk
 
 root = tk.Tk()
 root.title('GUI Shiv')
-root.geometry('350x650')
+root.geometry('150x300')
 
 '''BUTTONS - you know it'''
 btn1 = tk.Button(root , text = "Click Me")
