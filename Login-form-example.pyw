@@ -1,5 +1,12 @@
 from tkinter import *
+import sqlite3
+con=sqlite3.connect('lodinpage.db')
+cur=con.cursor()
 
+cur.execute('create table login(uname text not null primary key,pword text not null)')
+con.commit()
+
+top = Tk()
 
 def onclick():
     uname=E1.get()
